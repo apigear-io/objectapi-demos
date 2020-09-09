@@ -1,0 +1,27 @@
+objectapi: "1.0"
+name: apigear.calc
+version: "1.0"
+
+interfaces:
+  - name: Calculator
+    properties:
+      - name: total
+        type: int
+    operations:
+      - name: add
+        params:
+          - name: a
+            type: int
+      - name: substract
+        params:
+          - name: a
+            type: int
+      - name: multiply
+        params:
+          - name: a
+            type: int
+      - name: divide
+        params:
+          - name: a
+            type: int
+      - name: clear
