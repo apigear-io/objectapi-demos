@@ -1,0 +1,21 @@
+objectapi: "1.0"
+name: apigear.game
+version: "1.0.0"
+
+interfaces:
+  - name: Dice
+    properties:
+      - name: value
+        type: int
+    operations:
+      - name: toss
+
+  - name: Random
+    operations:
+      - name: generate
+        params:
+          - name: min
+            type: int
+          - name: max
+            type: int
+        type: int
