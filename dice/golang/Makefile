@@ -1,18 +1,26 @@
 .PHONY: all clean gen build watch
 
 all: clean gen
-	
+
+GENDIR = ../../../objectapi-generator/
+GENERATOR = yarn dev:gen
+RULES = templates/golang/oapi.rules.yml
+OUTPUT = ../objectapi-demos/dice/golang/ini
+TEMP = ../objectapi-demos/dice/golang/temp
+APIS = ../objectapi-demos/dice/apis
+
 clean:
 	rm -rf ini/**
 
+
 gen:
-	cd ../../../objectapi-generator/ && yarn dev:gen --rules templates/golang/oapi.rules.yml --output ../objectapi-demos/dice/golang/ini ../objectapi-demos/dice/apis --scaffold
+	cd ${GENDIR} && ${GENERATOR} --rules ${RULES} --output ${OUTPUT} ${APIS} --scaffold
 
 force:
-	cd ../../../objectapi-generator/ && yarn dev:gen --rules templates/golang/oapi.rules.yml --output ../objectapi-demos/dice/golang/ini ../objectapi-demos/dice/apis  --force --scaffold
+	cd ${GENDIR} && ${GENERATOR} --rules ${RULES} --output ${OUTPUT} ${APIS} --scaffold --force
 
 temp:
-	cd ../../../objectapi-generator/ && yarn dev:gen --rules templates/golang/oapi.rules.yml --output ../objectapi-demos/dice/golang/temp ../objectapi-demos/dice/apis --force --scaffold
+	cd ${GENDIR} && ${GENERATOR} --rules ${RULES} --output ${TEMP} ${APIS} --scaffold --force
 
 watch:
 	nodemon
