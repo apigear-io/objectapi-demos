@@ -1,4 +1,4 @@
-project(calc-sol)
+project(ini)
 
 cmake_minimum_required(VERSION 3.1)
 include(CTest)
@@ -16,10 +16,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
 set(LIBRARY_PATH "${CMAKE_BINARY_DIR}/libs" CACHE STRING "Path where the libraries are deployed")
 set(IMPORTS_PATH "${CMAKE_BINARY_DIR}/imports" CACHE STRING "Path where the plugins are deployed")
-add_subdirectory(apigear_calc)
-add_subdirectory(plugin_apigear_calc)
-add_subdirectory(app)
-add_subdirectory(qmlapp)
+add_subdirectory(apigear_game)
+add_subdirectory(plugin_apigear_game)
