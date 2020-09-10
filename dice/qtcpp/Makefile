@@ -13,7 +13,7 @@ clean:
 	rm -rf ini/**
 
 
-gen:
+ini:
 	cd ${GENDIR} && ${GENERATOR} --rules ${RULES} --output ${OUTPUT} ${APIS} --scaffold
 
 force:
