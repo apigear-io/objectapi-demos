@@ -1,5 +1,5 @@
 #include "tracer.h"
-#include "../shared/traceclient.h"
+#include "../../shared/traceclient.h"
 
 CalculatorTracer::CalculatorTracer()
 {

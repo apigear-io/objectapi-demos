@@ -20,7 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #include <QtQml>
 
-#include "api.h"
+#include "api/api.h"
 #include "qmlcalculator.h"
 
 void Plugin::registerTypes(const char *uri)

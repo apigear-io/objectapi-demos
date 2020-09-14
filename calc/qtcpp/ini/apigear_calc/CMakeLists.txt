@@ -2,8 +2,8 @@ find_package(Qt5 REQUIRED COMPONENTS Core Qml WebSockets)
 set(OUTPUT_PATH ${LIBRARY_PATH}/)
 
 set (APIGEAR_CALC_SOURCES
-    api.cpp
-    tracer.cpp
+    api/api.cpp
+    api/tracer.cpp
     factory.cpp
     ../shared/traceclient.cpp
     calculator.cpp
@@ -14,20 +14,10 @@ set (APIGEAR_CALC_SOURCES
 
 add_library(apigear_calc SHARED ${APIGEAR_CALC_SOURCES})
 
-# set_target_properties(apigear_calc PROPERTIES
-#     LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_PATH}
-#     RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_PATH}
-# )
-
 target_link_libraries(apigear_calc PRIVATE Qt5::Core Qt5::Qml Qt5::WebSockets)
 
 # static library
 add_library(apigear_calc_static STATIC ${APIGEAR_CALC_SOURCES})
-
-# set_target_properties(apigear_calc_static PROPERTIES
-#     LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_PATH}
-#     RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_PATH}
-# )
 
 target_link_libraries(apigear_calc_static PRIVATE Qt5::Core Qt5::Qml Qt5::WebSockets)
 

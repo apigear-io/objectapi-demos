@@ -19,7 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #include "calculator.h"
 
-#include "tracer.h"
+#include "api/tracer.h"
 #include <QtQml>
 
 Calculator::Calculator(QObject *parent)
