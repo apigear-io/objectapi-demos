@@ -19,7 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #include <QtCore>
 
-#include "api.h"
+#include "api/api.h" 
 
 class Calculator : public AbstractCalculator
 {

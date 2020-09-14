@@ -95,6 +95,6 @@ void TestCalculator::total(){
     // Do implement test here
 }
 
-QTEST_APPLESS_MAIN(TestCalculator);
+QTEST_MAIN(TestCalculator);
 
 

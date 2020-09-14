@@ -2,7 +2,7 @@
 
 #include <QtCore>
 
-#include "api.h"
+#include "api/api.h"
 
 class Factory : public AbstractFactory
 {
