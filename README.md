@@ -14,8 +14,9 @@ Each language contains a `ini` (initial code) and a `sol` (solution code). It is
 The calculator demo shows a simple calculator defined in a single ObjectAPI module.
 
 * [API](calc/apis/calculator.oapi.yaml)
-* [Initial C++ 14 Code](calc/cpp14/ini/)
-* [Solution C++ 14 Code](calc/cpp14/sol)
+* [Initial C++ 14](calc/cpp14/ini/)
+* [Solution C++ 14](calc/cpp14/sol)
+* [Service implementation for calculator API](calc/cpp14/sol/apigear_calc/calculator.cpp)
 
 For other languages see the respective sub-folders.
 
@@ -26,6 +27,14 @@ The dice demo show how one interface can depend on another interface.
 * [API](dice/apis/calculator.oapi.yaml)
 * [Initial C++ 14 Code](dice/cpp14/ini/)
 * [Solution C++ 14 Code](dice/cpp14/sol)
+* [Service implementation for dice API](dice/cpp14/sol/apigear_game/dice.cpp)
+* [Service implementation for random API](dice/cpp14/sol/apigear_game/random.cpp)
 
 For other languages see the respective sub-folders.
+
+## Future
+
+* Demonstrate adapters for transports
+* Demonstrate dynamic simulations
+
 
