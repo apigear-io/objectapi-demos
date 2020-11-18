@@ -22,7 +22,7 @@ For other languages see the respective sub-folders.
 
 ## Dice Demo
 
-The dice demo show how one interface can depend on another interface.
+The dice demo show how one interface (`Dice`) can depend on another interface (`Random`).
 
 * [API](dice/apis/calculator.oapi.yaml)
 * [Initial C++ 14 Code](dice/cpp14/ini/)
