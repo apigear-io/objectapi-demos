@@ -42,3 +42,7 @@ For other languages see the respective sub-folders.
 * Demonstrate dynamic simulations
 
 
+
+## License
+
+Licensed under the [MIT License](./LICENSE). See [LICENSE](./LICENSE) for details.
